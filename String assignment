@@ -1,0 +1,67 @@
+package com.solutions.java;
+
+public class Variable {
+	public static void main(String[] args) {
+		
+	
+		String str = new String("PhaniKumarGudipati");// problem1
+		System.out.println("Original String = " + str);
+		int a = str.charAt(0);
+		int b = str.charAt(9);
+		System.out.println("The 0th psotion is:" + (char) a);
+		System.out.println("The 9th psotion is:" + (char) b);
+		
+		
+		String s = "java standard edition";// problem2
+		String words[] = s.split("\\s");
+		String newString = "";
+
+		for (String w : words) {
+			String first = w.substring(0, 1);
+			String rest = w.substring(1);
+			newString += first.toUpperCase() + rest + " ";
+		}
+		System.out.println(newString.trim());
+		
+		
+		String name = "welcome to carrertuner";// problem3
+		System.out.println(name.contains("to carrertuner"));
+		
+		
+		String str1 = "Java Assignment";// problem4
+		String str2 = "Java Assignments";
+
+		String end_str = "nts";
+
+		boolean ends1 = str1.endsWith(end_str);
+		boolean ends2 = str2.endsWith(end_str);
+
+		System.out.println("\"" + str1 + "\" ends with " + "\"" + end_str + "\"? " + ends1);
+		System.out.println("\"" + str2 + "\" ends with " + "\"" + end_str + "\"? " + ends2);
+		
+		
+		String str3 = "Iam Phanikumar Gudipati";//problem5
+
+		int count = 1;
+
+		for (int i = 0; i < str.length() - 1; i++) {
+			if ((str3.charAt(i) == ' ') && (str3.charAt(i + 1) != ' ')) {
+				count++;
+			}
+		}
+		System.out.println("Number of words in a string : " + count);
+		
+		
+		String str4= "MySelf PhaniKumarGudipati";//problem6
+		 
+	    for (int i = 0; i < str.length(); i++) {
+	    
+	            if(Character.isUpperCase(str4.charAt(i))){    
+	            System.out.println(str4.charAt(i));
+	            }
+	            }
+	   
+	   	    }
+	}
+
+	
