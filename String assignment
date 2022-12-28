@@ -60,6 +60,15 @@ public class Variable {
 	            System.out.println(str4.charAt(i));
 	            }
 	            }
+		     String str5="bvrit college";//problem7
+        System.out.println("Statement before Change : \n"+str5);
+        System.out.println("-------------------------------");
+        System.out.println("Statement after Change : \n"+str5.replace("ll","lL"));
+	    String str6="b.v.raju college";//problem8
+	     System.out.println("Statement Before Converting: \n\n"+str6);
+        System.out.println("\nStatement After Converting is: ");
+        System.out.println("-------------------------------");
+        System.out.println(str6.replace("raju","RAJU"));
 	   
 	   	    }
 	}
